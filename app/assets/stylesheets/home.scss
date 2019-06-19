@@ -4,7 +4,6 @@ html {
     letter-spacing: 1.2px;
 }
 
-
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -24,9 +23,27 @@ header {
 }
 
 header a{
-    color: white;
-    font-size: 23px;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
 }
+
+.header_top a:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transform: scale(0,1);
+    transition: 0.4s;
+}
+
+.header_top a:hover:before {
+    transform: scale(1);
+}
+
 
 .header_top_left {
     float: left;
@@ -37,6 +54,16 @@ header a{
     line-height: 35px;
 }
 
+.header_top_left a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.header_top_left img {
+    width:15px;
+    height:auto;
+}
+
 .header_top_right {
     float: right;
     line-height: 35px;
@@ -44,15 +71,7 @@ header a{
     color:white;
 }
 
-.header_top_left a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-}
-
 .header_top_right a{
-    text-decoration: none;
-    color: #ffffff;
     font-size: 14px;
 }
 
@@ -66,40 +85,43 @@ header a{
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     color: white;
     background-color: rgb(77, 106, 143);
 }
 
 .main_field h2{
-    font-size:110px;
-    font-weight:550;
-    line-height: 1.1;
+    width:80%;
+    margin:auto;
+    font-size:115px;
+    //font-weight:300px;
+    line-height: 1.2;
 }
 
 .main_field p{
-    font-size:26px
-    
+    width:80%;
+    margin:auto;
+    font-size:24px
 }
 
 .main_title {
     position: relative;
     top:-55px;
-    
-    
 }
 
 //contents
 .contents_field {
     position:relative;
-    margin-top:20px;
+    margin: auto;
+    width: 80%;
+    height: auto;
 }
 
 .contents_field h3{
-    font-size:28px;
+    font-size:20px;
     padding:8px;
     border-bottom:1px solid #111111;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .contents_field p{
@@ -109,23 +131,46 @@ header a{
 }
 
 .contents_title {
-    font-size:24px;
+    font-size:16px;
     letter-spacing: 10px;
     font-style:italic;
-    box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.13);
-    border-bottom:1px solid #111111;
-    margin-bottom:20px
+    padding:5px;
+    //rgb(47, 61, 97) 基本カラー
+    //text-shadow: 
+        //2.5px 2.5px 0px rgb(31, 47, 85),
+        //3px 3px 0px rgb(31, 47, 85),
+        //3.5px 3.5px 0px rgb(31, 47, 85),
+        //4px 4px 0px rgb(31, 47, 85),;
+    box-shadow: 6px 6px 0px rgb(31, 47, 85);
+    border-radius: 15px;
+    border-bottom:3px solid rgb(133, 148, 185);
+    margin-bottom: 25px;
+    margin-top: 60px;
 }
 
-.contents_QD {
-    float:left;
+.contents_block {
+    display: inline-block;
+    //float:left;
     text-align: center;
-    margin-left:40px;
-    width: 180px;
-    height: 180px;
+    //margin:auto;
+    //margin-left:50px;
+    margin:0px 20px;
+    width: 140px;
+    height: 170px;
     border-radius: 15px;
     background-color: rgb(77, 143, 88);
-    box-shadow: 6px 6px black;
+    box-shadow: 6px 6px rgb(22, 22, 22);
+}
+
+.contents_block img{
+    float:center;
+    width:80px;
+    height:auto;
+}
+
+.contents_block p{
+    font-size:10px;
+    margin:5px auto auto 42px;
 }
 
 //footer
@@ -134,7 +179,7 @@ footer {
     position: fixed;
     width: 100%;
     height:auto;
-    padding: 6px 0 6px;
+    padding: 3px 0 3px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -154,3 +199,4 @@ footer {
     float: left;
     padding-left:20px;
 }
+
