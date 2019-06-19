@@ -1,3 +1,4 @@
+
 //ALL
 html {
     line-height: 1.5;
@@ -28,6 +29,10 @@ header a{
     color: #ffffff;
 }
 
+.header_top {
+    color:white
+}
+
 .header_top a:before{
     content: "";
     position: absolute;
@@ -49,14 +54,12 @@ header a{
     float: left;
     padding-left:20px;
     font-size:22px;
-    font-weight:bold;
-    color:white;
+    font-weight:bold;;
     line-height: 35px;
 }
 
 .header_top_left a{
     font-size: 20px;
-    color: rgb(255, 255, 255);
 }
 
 .header_top_left img {
@@ -68,11 +71,19 @@ header a{
     float: right;
     line-height: 35px;
     padding-right:20px;
-    color:white;
+    margin-left:30px;
 }
 
 .header_top_right a{
     font-size: 14px;
+}
+
+.header_language {
+    float:right;
+    font-size:20px;
+    font-weight:bold;
+    line-height: 35px;
+    margin-right:20px;
 }
 
 //Main
@@ -88,20 +99,26 @@ header a{
     height: auto;
     color: white;
     background-color: rgb(77, 106, 143);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    background-image: url("/background.png");
 }
 
-.main_field h2{
+.top_title{
     width:80%;
     margin:auto;
     font-size:115px;
     //font-weight:300px;
     line-height: 1.2;
+    text-shadow:4px 4px 0px rgb(31, 47, 85);
 }
 
-.main_field p{
+.top_p {
     width:80%;
     margin:auto;
-    font-size:24px
+    font-size:24px;
+    text-shadow:1px 1px 0px rgb(31, 47, 85);
 }
 
 .main_title {
@@ -109,11 +126,32 @@ header a{
     top:-55px;
 }
 
+//aboutページ等用
+.main_text_field {
+    z-index: 1;
+    position: relative;
+    text-align: left;
+    padding: 40px 40px 40px;
+    width: 60%;
+    height:auto;
+    min-height:700px;
+    top:-50px;
+    margin:auto;
+    background-color:rgba(47, 61, 97, 0.904);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.623);
+}
+
+.main_text_field_h {
+    text-align: center;
+    line-height: 4;
+}
+
 //contents
 .contents_field {
     position:relative;
     margin: auto;
-    width: 80%;
+    width: 75%;
     height: auto;
 }
 
@@ -135,42 +173,74 @@ header a{
     letter-spacing: 10px;
     font-style:italic;
     padding:5px;
-    //rgb(47, 61, 97) 基本カラー
-    //text-shadow: 
-        //2.5px 2.5px 0px rgb(31, 47, 85),
-        //3px 3px 0px rgb(31, 47, 85),
-        //3.5px 3.5px 0px rgb(31, 47, 85),
-        //4px 4px 0px rgb(31, 47, 85),;
-    box-shadow: 6px 6px 0px rgb(31, 47, 85);
+    text-shadow:2px 2px 0px rgb(31, 47, 85);
+    margin:50px auto auto auto;
+}
+
+.contents_title_original {
+    background-color:rgba(255, 255, 255, 0.062);
+    border-bottom:4px solid rgba(255, 255, 255, 0.651);
     border-radius: 15px;
-    border-bottom:3px solid rgb(133, 148, 185);
-    margin-bottom: 25px;
-    margin-top: 60px;
+    box-shadow:
+    1px 2px 1px rgb(92, 115, 167), 
+    2px 4px 1px rgb(81, 103, 153),
+    3px 6px 1px rgb(71, 91, 139),
+    4px 8px 1px rgb(60, 81, 129),
+    5px 10px 1px rgb(52, 72, 119),
+    6px 12px 0px rgb(31, 47, 85);
+}
+
+.contents_title_third {
+    background-color:rgba(255, 255, 255, 0.062);
+    border-bottom:4px solid rgba(255, 255, 255, 0.651);
+    border-radius: 15px;
+    box-shadow:
+    1px 2px 1px rgb(182, 114, 114), 
+    2px 4px 1px rgb(155, 88, 88),
+    3px 6px 1px rgb(141, 77, 77),
+    4px 8px 1px rgb(124, 55, 55),
+    5px 10px 1px rgb(110, 44, 44),
+    6px 12px 0px rgb(85, 31, 31);
+}
+
+.contents_title_data {
+    background-color:rgba(255, 255, 255, 0.062);
+    border-bottom:4px solid rgba(255, 255, 255, 0.651);
+    border-radius: 15px;
+    box-shadow:
+    1px 2px 1px rgb(92, 115, 167), 
+    2px 4px 1px rgb(81, 103, 153),
+    3px 6px 1px rgb(71, 91, 139),
+    4px 8px 1px rgb(60, 81, 129),
+    5px 10px 1px rgb(52, 72, 119),
+    6px 12px 0px rgb(31, 47, 85);
+}
+
+.contents_block_field {
+    margin:auto;
 }
 
 .contents_block {
     display: inline-block;
-    //float:left;
     text-align: center;
-    //margin:auto;
-    //margin-left:50px;
-    margin:0px 20px;
+    margin:45px 20px;
     width: 140px;
     height: 170px;
     border-radius: 15px;
     background-color: rgb(77, 143, 88);
-    box-shadow: 6px 6px rgb(22, 22, 22);
+    box-shadow: 
+    5px 5px rgb(49, 102, 58);
 }
 
 .contents_block img{
     float:center;
-    width:80px;
+    width:75px;
     height:auto;
 }
 
 .contents_block p{
-    font-size:10px;
-    margin:5px auto auto 42px;
+    font-size:8px;
+    margin:6px auto auto 40px;
 }
 
 //footer
