@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* 開発予定の機能
+・いくつかのツール（QDタイマー、貿易）
+・ユーザーによるtopページのコンテンツカスタマイズ
+・それに伴うカスタマイズページの保存（URLでの保存が望ましい）
+・日本語版と英語版の切り替え
+・モバイル対応
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
