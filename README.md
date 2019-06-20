@@ -1,7 +1,10 @@
 # README
 * 拡張
 
-・文字と同様に扱うアイコンは「https://fontawesome.com/」から使用（headerの <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">）
+・文字と同様に扱うアイコンは「https://fontawesome.com/ 」から使用（headerの "<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">"）
+
+・ブロックなどに使用するアイコンは「http://icooon-mono.com/ 」
+
 
 * 開発予定の機能:
 
