@@ -111,7 +111,9 @@ header a{
     font-size:115px;
     //font-weight:300px;
     line-height: 1.2;
-    text-shadow:4px 4px 0px rgb(31, 47, 85);
+    text-shadow:
+    4px 4px 0px rgb(31, 47, 85),
+    5px 5px 5px rgba(0, 0, 0, 0.377);
 }
 
 .top_p {
@@ -130,6 +132,7 @@ header a{
     color:rgb(77, 143, 88);
     text-shadow: 
     5px 5px rgb(41, 87, 48),
+    6px 6px 5px rgba(0, 0, 0, 0.377)
     ;
 }
 
