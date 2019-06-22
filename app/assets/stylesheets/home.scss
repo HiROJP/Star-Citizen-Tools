@@ -126,6 +126,13 @@ header a{
     top:-55px;
 }
 
+.main_title span{
+    color:rgb(77, 143, 88);
+    text-shadow: 
+    5px 5px rgb(41, 87, 48),
+    ;
+}
+
 //aboutページ等用
 .main_text_field {
     z-index: 1;
@@ -187,7 +194,8 @@ header a{
     3px 6px 1px rgb(71, 91, 139),
     4px 8px 1px rgb(60, 81, 129),
     5px 10px 1px rgb(52, 72, 119),
-    6px 12px 0px rgb(31, 47, 85);
+    6px 12px 0px rgb(31, 47, 85),
+    7px 13px 5px rgba(0, 0, 0, 0.377);
 }
 
 .contents_title_third {
@@ -200,7 +208,8 @@ header a{
     3px 6px 1px rgb(141, 77, 77),
     4px 8px 1px rgb(124, 55, 55),
     5px 10px 1px rgb(110, 44, 44),
-    6px 12px 0px rgb(85, 31, 31);
+    6px 12px 0px rgb(85, 31, 31),
+    7px 13px 5px rgba(0, 0, 0, 0.377);
 }
 
 .contents_title_data {
@@ -213,7 +222,8 @@ header a{
     3px 6px 1px rgb(71, 91, 139),
     4px 8px 1px rgb(60, 81, 129),
     5px 10px 1px rgb(52, 72, 119),
-    6px 12px 0px rgb(31, 47, 85);
+    6px 12px 0px rgb(31, 47, 85),
+    7px 13px 5px rgba(0, 0, 0, 0.377);
 }
 
 .contents_block_field {
@@ -229,7 +239,8 @@ header a{
     border-radius: 15px;
     background-color: rgb(77, 143, 88);
     box-shadow: 
-    5px 5px rgb(49, 102, 58);
+    5px 5px rgb(41, 87, 48),
+    6px 6px 5px rgba(0, 0, 0, 0.377);
 }
 
 .contents_block img{
@@ -238,15 +249,50 @@ header a{
     height:auto;
 }
 
+
 .contents_block p{
     font-size:8px;
     margin:6px auto auto 40px;
 }
 
+.fukidashi {
+    display: none;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    padding: 16px;
+    border-radius: 5px;
+    background: #33cc99;
+    color: #fff;
+    font-weight: bold;
+}
+
+.fukidashi:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: -19px;
+    margin-left: 10px;
+    border: solid transparent;
+    border-color: rgba(51, 204, 153, 0);
+    border-top-color: #33cc99;
+    border-width: 10px;
+    pointer-events: none;
+    content: " ";
+}
+
+.contents_block :hover + .fukidashi {
+    display: block;
+}
+
+
 //footer
 footer {
     z-index: 1;
     position: fixed;
+    font-size:14px;
     width: 100%;
     height:auto;
     padding: 3px 0 3px;
@@ -270,3 +316,6 @@ footer {
     padding-left:20px;
 }
 
+.footer_field_right i{
+    color:#55acee;
+}
