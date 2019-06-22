@@ -1,24 +1,37 @@
 # README
+* 原則
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+・命名規則はスネークケース（URL名も同じ、ただし引用ファイルやコメントアウト等は考慮しなくてOK）
 
-Things you may want to cover:
+・
 
-* Ruby version
 
-* System dependencies
+* カラー
 
-* Configuration
+・基本デザイン3色:白、rgb(47, 61, 97)（青）、rgb(77, 143, 88)（緑）
 
-* Database creation
+・最終影:rgba(0, 0, 0, 0.377) （ボカすこと）
 
-* Database initialization
 
-* How to run the test suite
+* 拡張
 
-* Services (job queues, cache servers, search engines, etc.)
+・文字と同様に扱うアイコンは「https://fontawesome.com/ 」から使用（headerの "<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">"）
 
-* Deployment instructions
+・ブロックなどに使用するアイコンは「http://icooon-mono.com/ 」
 
-* ...
+
+
+* 開発予定の機能:
+
+・いくつかのツール（QDタイマー、貿易）
+
+・ユーザーによるtopページのコンテンツカスタマイズ
+
+・それに伴うカスタマイズページの保存（URLでの保存が望ましい）
+
+・日本語版と英語版の切り替え
+
+・モバイル対応
+
+
+
